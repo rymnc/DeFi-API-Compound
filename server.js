@@ -9,10 +9,10 @@ const app = new Koa();
 
 const router = require('./router.js')
 
-
+app.use(cors());
 app.use(router.routes());
 
-app.use(cors());
+
 
 
 
